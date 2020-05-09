@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+
+<suite name="Suite">
+<parameter name ="Url" value ="www.google.com"/>
+
+<!-- <groups>
+  <run>
+  <include name ="Mobile"/>
+  </run>
+  </groups> -->
+  <test name="Mobile">
+  
+  
+    <classes>
+     
+      <class name = "Maven.AppiumTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name ="Web">
+  <classes>
+   <class name="Maven.SeleniumTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
